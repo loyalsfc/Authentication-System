@@ -1,0 +1,39 @@
+body {
+    padding: 5rem 18rem;
+}
+div.container {
+    max-height: 500px;
+}
+
+div.image-bg img {
+    height: 50rem;
+    width: 40rem;
+}
+
+form.form {
+    padding: 2rem 3rem;
+}
+
+form.form h1 {
+    font-style: var(--formTitle);
+    font-size: x-large;
+    text-align: center;
+}
+
+.m3 {
+    display: flex;
+    justify-content:space-between;
+}
+.m3 label {
+    width: 47%;
+}
+input[type=radio]{
+    display: inline;
+}
+span {
+    line-height: 35px;
+}
+p {
+    text-align: center;
+    margin-top: 15px;
+}

@@ -1,0 +1,157 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/*
+EXAMPLE ON HOW TO USE COLORS AND FONTS ASSETS
+element{
+    color: var(--pink);
+    font-family: var(--formTitle);
+}
+*/
+
+body {
+    background-color: var(--body-bg);
+    font-family: var(--dashboardTitle);
+    /* text-align: center; */
+    box-sizing: border-box;
+    padding: 12rem 18rem;
+}
+
+div.container {
+    display: flex;
+    border-radius: 5rem;
+}
+
+div.image-bg {
+    width: 45%;
+    display: inline-block;
+    background-color: var(--pink);
+    border-radius: 3rem 0 0 3rem;
+    align-items: center;
+    /* position: relative; */
+    overflow: hidden;
+    padding: 5rem 3rem;
+}
+
+div.image-bg img {
+    /* position: absolute; */
+    height: 30rem;
+    width: 25rem;
+    display: block;
+    margin: 0 auto;
+}
+
+form.form {
+    width: 55%;
+    display: inline-block;
+    padding: 6rem 3rem;
+    background-color: var(--formBackground);
+    border-radius: 0 3rem 3rem 0;
+}
+
+form.form h1 {
+    color: var(--titleTextColor);
+    font-size: xx-large;
+    padding-bottom: 2rem;
+}
+
+form.form p {
+    font-size: larger;
+    padding-bottom: 3.5rem;
+}
+
+
+
+
+/* form.form p a:link {
+    color: var(--pink);
+} */
+
+a {
+    text-decoration: none;
+    color: var(--pink);
+}
+
+form.form label:not(form.form label.checkbox-label) {
+    display: block;
+    padding-bottom: 2rem;
+    font-size: 1.1rem;
+    color: var(--labelTextColor);
+}
+
+form.form label input:not(form.form label.checkbox-label input) {
+    display: block;
+    margin-top: 1rem;
+    padding: .5rem;
+    outline: none;
+    border: none;
+    border-radius: .6rem;
+    width: 100%;
+    background-color: var(--inputsBackground);
+}
+
+form.form label.checkbox-label {
+    display: flex;
+    align-items: center;
+}
+
+div.check-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+form.form label.checkbox-label input {
+    /* font-size: 1.5rem; */
+    margin-right: .5rem;
+}
+
+button.button {
+    padding: .4rem 1rem;
+    border: none;
+    border-radius: 100px;
+    color: var(--inputsBackground);
+    display: flex;
+    margin: 0 auto;
+    background-color: var(--labelTextColor);
+}
+
+
+.welcome-container {
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 120px;
+    position: relative;
+    text-align: center;
+}
+.welcome-container > h1 {
+    font-size: 80px;
+}
+.welcome-container > h2 {
+    font-size: 30px;
+    font-style: var(--inputLabel);
+}
+
+.welcome-container > button {
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 100%;
+    left: 40%;
+    padding: 10px 15px 10px 15px;
+    background-color: var(--pink);
+    border: none;
+    color: white;
+}
